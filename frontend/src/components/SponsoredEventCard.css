@@ -1,0 +1,153 @@
+.SponsoredEventCard-Okvir {
+    /* Auto layout */
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+    margin-left: 5px;
+    width: 400px;
+    /* Povećana širina */
+    max-height: 500px;
+    overflow: vissible;
+    position: relative;
+    background: #Fefefe;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.SponsoredEventCard-Okvir:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.Naslov {
+    font-size: 20px;
+}
+
+.Opis {
+    color: #666666;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.Opis p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.SponsoredEventCard-Header {
+    width: 100%;
+    /* Širina prilagođena kartici */
+    height: 120px;
+    background: #F15A24;
+    overflow: hidden;
+    max-height: 159px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.SponsoredEventCard-body {
+    margin: 25px;
+}
+
+.SponsoredEventCard-user {
+    height: 80px;
+    gap: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.creator-image {
+    background-color: gainsboro;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.createdBy {
+    margin-top: 10px;
+    color: #666666;
+}
+
+.SponsoredEventCard-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.SponsoredEventCard-footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+
+}
+
+.SponsoredEventCard-footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: right;
+    margin-left: 40px;
+}
+
+.SponsoredEventCard-footer-right .clickable-location {
+    cursor: pointer;
+    color: #e64a19;
+    text-decoration: underline;
+}
+
+.SponsoredEventCard-footer-right .clickable-location:hover {
+    color: #e64a19;
+}
+
+.event-card-menu {
+    position: absolute;
+    /* Omogućava precizno pozicioniranje unutar kartice */
+    top: 150px;
+    /* Vertikalno poravnanje */
+    right: 30px;
+    /* Pomjera tri tačke na desnu stranu */
+    cursor: pointer;
+    /* Prikazuje ikonu ruke na hover */
+    color: #000000;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 25px;
+    /* Postavlja meni ispod tri tačke */
+    right: 0px;
+    /* Poravnava meni s desne strane tri tačke */
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 9999;
+    width: 110px;
+}
+
+.dropdown-menu button {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+    background: #F15A24;
+    color: #fff;
+}

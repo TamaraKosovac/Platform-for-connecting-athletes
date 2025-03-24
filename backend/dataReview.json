@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "rating": 5,
+        "description": "Jako dobar teren",
+        "client_id": 10,
+        "field_id": 1,
+        "date": "2025-01-22"
+    },
+    {
+        "id": 2,
+        "rating": 3,
+        "description": "Poprilično zapušten teren",
+        "client_id": 7,
+        "field_id": 3,
+        "date": "2025-01-22"
+    },
+    {
+        "id": 3,
+        "rating": 1,
+        "description": "Trava nije pogodna za održavanje fudbalske utakmice",
+        "client_id": 10,
+        "field_id": 3,
+        "date": "2025-01-22"
+    },
+    {
+        "id": 4,
+        "rating": 5,
+        "description": "Odličan teren",
+        "client_id": 7,
+        "field_id": 11,
+        "date": "2025-01-22"
+    },
+    {
+        "id": 5,
+        "rating": 5,
+        "description": "Odličan teren za košarku, nije uvijek gužva, može se naći slobodan koš i za basket.",
+        "client_id": 30,
+        "field_id": 7,
+        "date": "2025-01-22"
+    },
+    {
+        "id": 6,
+        "rating": 5,
+        "description": "Teren u odličnom stanju, novi golovi i lako je naći tim za igranje.",
+        "client_id": 30,
+        "field_id": 9,
+        "date": "2025-01-22"
+    },
+    {
+        "id": 7,
+        "rating": 5,
+        "description": "Sjajan teren, sa još boljim igračima.",
+        "client_id": 30,
+        "field_id": 8,
+        "date": "2025-01-22"
+    },
+    {
+        "id": 8,
+        "rating": 5,
+        "description": "Odličan za manju ekipu za basket",
+        "client_id": 12,
+        "field_id": 1,
+        "date": "2025-01-22"
+    },
+    {
+        "id": 9,
+        "rating": 4,
+        "description": "Lokacija je jako dobra, teren isto nije loš",
+        "client_id": 7,
+        "field_id": 1,
+        "date": "2025-01-22"
+    },
+    {
+        "id": 10,
+        "rating": 1,
+        "description": "Bilo je dosta smeća na terenu kad smo igrali basket prošle sedmice",
+        "client_id": 30,
+        "field_id": 1,
+        "date": "2025-01-22"
+    },
+    {
+        "id": 11,
+        "rating": 4,
+        "description": "Solidan teren na dobroj lokaciji",
+        "client_id": 4,
+        "field_id": 1,
+        "date": "2025-01-22"
+    },
+    {
+        "id": 12,
+        "rating": 4,
+        "description": "Solidan teren",
+        "client_id": 32,
+        "field_id": 1,
+        "date": "2025-01-22"
+    }
+]

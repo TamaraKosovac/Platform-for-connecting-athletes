@@ -1,0 +1,6 @@
+frontend/eslint.config.mjs
+frontend/src/components/Firebase.js
+backend/client_secret.json
+backend/clientdata.json
+backend/token.json
+backend/firebasecredentials.json

@@ -1,0 +1,154 @@
+.EditUserProfileBody {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    background-color: #fefefe;
+}
+
+/* Uredi profil */
+.EditUserProfileDialog,
+.EditUserProfileDialog form {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 8px;
+
+    width: 328px;
+}
+
+.EditProfileImage {
+    margin: 15px;
+    border-radius: 50%;
+    /* Makes the image circular */
+    object-fit: cover;
+    /* Ensures the image covers the entire circle */
+    align-self: center;
+    width: 90px;
+    height: 90px;
+
+    background: #C4C4C4;
+}
+
+.NewImage {
+    margin-bottom: 28px;
+    align-self: center;
+    background-color: #fefefe;
+    border: none;
+    cursor: pointer;
+    color: #F15A24;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.close-icon-orange {
+    z-index: 1001;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 25px;
+    width: 25px;
+    transform: translate(220px, -230px);
+    color: #F15A24;
+}
+
+.EditUserProfileBody .close-icon-orange {
+    transform: translate(215px, -220px);
+}
+
+.NewImage:hover {
+    color: #e64a19;
+}
+
+.EditUserProfileDialog form .EditProfileLabel,
+.EditUserProfileDialog form .EditProfileInput,
+.EditUserProfileDialog form .EditProfileInput-email {
+    font: 'Popins', regular;
+    font-size: 16px;
+
+}
+
+.EditProfileLabel {
+    margin: 0px;
+    padding-left: 17px;
+    font-weight: 500;
+    color: black;
+}
+
+
+.EditProfileInput {
+    color: #666666;
+    display: block;
+    width: 90%;
+    align-self: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* Remove default outline */
+    transition: border 0.3s ease;
+}
+
+.EditProfileInput-email {
+    color: #666666;
+    display: block;
+    width: 90%;
+    align-self: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f1f1f1;
+}
+
+.EditProfileInput:focus {
+    color: black;
+    outline: none;
+    border: 1.5px solid #F15A24;
+}
+
+.EditProfileButton {
+    display: block;
+    align-self: center;
+    width: 97%;
+    padding: 10px;
+    background-color: #fefefe;
+    color: red;
+    border: 1px solid Black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+    /* Rectangle 4 */
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(17, 17, 17, 0.25);
+}
+
+#PromijeniLozinkuButton,
+#EditNameEmailButton,
+#OdustaniButton {
+    color: black;
+}
+
+.modal-bootstrap {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background: #fefefe;
+    padding: 30px 40px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.modal-body {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    text-align: justify;
+}

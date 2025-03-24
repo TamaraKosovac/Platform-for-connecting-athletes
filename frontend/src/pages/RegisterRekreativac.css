@@ -1,0 +1,327 @@
+/* RegisterRekreativac.css */
+.register-body {
+  margin: 0;
+  /* Uklanja bijele margine */
+  padding: 0;
+  background-color: lightyellow;
+  /* Svijetloplava pozadina */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Forma u centru */
+  box-sizing: border-box;
+  overflow: hidden;
+  /* Sprečava skrolovanje ako nešto izlazi van */
+}
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  /* Širina kontejnera */
+}
+
+.logo-container {
+  margin-top: 0;
+  /* Smanjuje razmak na vrhu */
+  margin-bottom: 20px;
+}
+
+.basket-logo {
+  width: 160px;
+  /* Prilagodite veličinu logotipa ako je potrebno */
+  max-width: 250px;
+}
+
+#welcome-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#form-container {
+  border: 3px solid #ff6600;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  /* Fiksna širina forme */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1.welcome-title {
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff6600;
+  box-shadow: 0 0 2px #ff6600;
+}
+
+.password-criteria-box {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.password-criteria-box h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.password-criteria {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.password-criteria li {
+  font-size: 13px;
+  margin: 5px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.password-criteria li.valid::before {
+  content: "✔";
+  color: green;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.password-criteria li.invalid::before {
+  content: "✘";
+  color: red;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+button.continue-button {
+  width: 100%;
+  padding: 10px;
+  background: #ff6600;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.continue-button:hover {
+  background: #e65500;
+}
+
+.social-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button.social-button {
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.facebook-button {
+  background: #3b5998;
+  color: #fff;
+}
+
+button.facebook-button:hover {
+  background: #2d4373;
+}
+
+button.email-button {
+  background: #007bff;
+  color: #fff;
+}
+
+button.email-button:hover {
+  background: #0056b3;
+}
+
+.login-prompt {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.login-prompt .login-link {
+  color: #0056b3;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-prompt .login-link:hover {
+  text-decoration: underline;
+}
+
+.progress-bar {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.progress-bar .steps {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-bar .step {
+  text-align: center;
+  flex: 1;
+  cursor: pointer;
+}
+
+.progress-bar .step-circle {
+  width: 25px;
+  height: 25px;
+  background: #ddd;
+  border-radius: 50%;
+  margin: 0 auto;
+  line-height: 25px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.progress-bar .step.active .step-circle {
+  background: #ff6600;
+}
+
+.progress-bar .step p {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #555;
+}
+
+.progress-bar .step.active p {
+  font-weight: bold;
+  color: #333;
+}
+
+.tekst-za-unos {
+  text-align: center;
+
+}
+
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-container input {
+  flex: 1;
+}
+
+.toggle-password {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.image-preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.preview-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.remove-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.remove-button:hover {
+  background-color: #e60000;
+}
+
+.crop-container {
+  position: relative;
+  /* Obavezno! */
+  width: 100%;
+  /* Postavi širinu po potrebi */
+  height: 400px;
+  /* Visina za prikaz croppera */
+  overflow: hidden;
+  /* Sprečava da sadržaj izlazi van */
+}
+
+.crop-buttons {
+  position: absolute;
+  bottom: 10px;
+  /* Dugmad na dnu crop-containera */
+  left: 50%;
+  transform: translateX(-50%);
+  /* Centriraj dugmad horizontalno */
+  display: flex;
+  gap: 10px;
+}
+
+.save-button,
+.cancel-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.save-button:hover,
+.cancel-button:hover {
+  background-color: #0056b3;
+}

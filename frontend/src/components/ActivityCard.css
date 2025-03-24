@@ -1,0 +1,242 @@
+.activity-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.activity-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+  margin-left: 5px;
+  width: 400px;
+  max-height: 500px;
+  overflow: visible;
+  background: #fff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 20px;
+  padding-left: 20px;
+  position: relative;
+  /* Za pozicioniranje menija */
+}
+
+.activity-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.activity-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.activity-card p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.9;
+  text-align: justify;
+  margin: 4px 0;
+}
+
+.activity-card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+}
+
+.activity-card-footer-left,
+.activity-card-footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-card-footer-right {
+  align-items: flex-end;
+  text-align: right;
+  margin-left: 70px;
+}
+
+.activity-card-footer-right .clickable-location {
+  cursor: pointer;
+  color: #e64a19;
+  text-decoration: underline;
+}
+
+.activity-card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 130px;
+}
+
+.activity-card-buttons .button,
+.activity-card-buttons .unregister-button {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #ff5722;
+  border: none;
+  padding: 10px 13px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.activity-card-buttons .button:hover,
+.activity-card-buttons .unregister-button:hover {
+  background-color: #e64a19;
+}
+
+.activity-card-buttons .button:disabled,
+.activity-card-buttons .unregister-button:disabled {
+  background-color: #ecd1a9;
+  color: #ffffff;
+  border: 1px solid #d2ba96;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.activity-card-buttons .button:hover:disabled {
+  background-color: #ecd1a9;
+}
+
+.activity-card-title {
+  margin-bottom: 16px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.clickable-username {
+  color: #e64a19;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.clickable-username:hover {
+  color: #e64a19;
+}
+
+.activity-card .menu {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.activity-card .menu-icon {
+  cursor: pointer;
+  margin: 10px;
+  font-size: 16px;
+}
+
+.activity-card .menu-dropdown {
+  position: absolute;
+  top: 30px;
+  /* Postavlja meni ispod tri tačke */
+  right: 0px;
+  /* Poravnava meni s desne strane tri tačke */
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 999;
+  width: 110px;
+}
+
+.activity-card .menu-button {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.activity-card .menu-button:hover {
+  background: #F15A24;
+  color: #fff;
+}
+
+.activity-card .menu-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.activity-card .menu-item .icon {
+  font-size: 16px;
+}
+
+.activity-card .menu-item .label {
+  font-size: 14px;
+  color: #333;
+}
+
+.participants-list {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+  bottom: 22%;
+  min-width: 100px;
+  left: 55%;
+  /* Širina liste */
+  max-width: 50%;
+  overflow: scroll;
+}
+
+.participants-list h4 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.participants-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  /* Poravnanje učesnika lijevo */
+}
+
+.participants-list ul li {
+  font-size: 14px;
+  color: #555;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+  /* Linija ispod svakog učesnika */
+}
+
+.participants-list ul li:last-child {
+  border-bottom: none;
+  /* Uklanja liniju ispod posljednjeg učesnika */
+}
+
+.participants-list p {
+  font-size: 14px;
+  color: #999;
+  text-align: left;
+}
+
+.activity-card-comments {
+  margin-top: 20px;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.activity-card-comments h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}

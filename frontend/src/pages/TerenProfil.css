@@ -1,0 +1,214 @@
+.information-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.image-container {
+  margin-bottom: 0px; /* Povećava ili smanjuje razmak između slike i kartice */
+}
+
+.image-container img {
+  height: 500px;
+  width: 750px;
+  border-radius: 10px;
+  margin-left: -250px;
+  margin-top: 40px;
+}
+
+.image-container img:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.information-text {
+  font-size: 20px;
+  color: gray;            
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.information-text strong {
+  font-weight: bold;
+}
+
+.sport-name {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.activity-cards-container-field {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.fav-field-like-button,
+.fav-field-like-button .FaHeart-icon,
+.fav-field-like-button .FaRegHeart-icon {
+  color: #F15A24;
+  position: absolute;
+  align-self: center;
+  margin-right: 30px;
+  right: 0px;
+  height: 30px;
+  width: 30px;
+}
+
+.fav-field-like-button:hover {
+  color: #e64a19;
+}
+
+.events-section {
+  flex-direction: row;
+  gap: 20px;
+  /* Razmak između pojedinačnih elemenata */
+  width: 100%;
+  /* Obezbeđuje da sekcija zauzima punu širinu */
+}
+
+.sponsored-events-section,
+.activities-section {
+  display: flex;
+  flex-direction: row;
+  /* Osigurava vertikalni raspored unutar sekcije */
+  gap: 10px;
+  /* Razmak između elemenata unutar sekcije */
+  width: 100%;
+  /* Širina sekcije */
+  padding: 15px;
+  /* Dodaje unutrašnji razmak */
+  border-radius: 8px;
+  /* Zaobljeni uglovi */
+  margin-left: -20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.activity-card-review {
+  flex: 1 0 300px;
+  max-width: 280px;
+  min-height: 280px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  transition: box-shadow 0.2s ease;
+  position: relative;
+}
+
+.activity-card-review:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-bar-field-profile {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  /* Razmak između sekcija */
+}
+
+.no-events-message {
+  margin-left: 5px;
+}
+
+.rating-stars {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.star {
+  font-size: 24px;
+  color: lightgray;
+}
+
+.star.filled {
+  color: #e64a19; 
+}
+
+.review-detail .icon {
+  margin-right: 10px;
+  color: #555; /* Možete prilagoditi boju ikona */
+  font-size: 16px; /* Možete prilagoditi veličinu ikona */
+}
+
+.review-detail {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.review-detail .icon {
+  margin-right: 10px;
+  color: #555;
+  font-size: 16px;
+}
+
+.size {
+  margin: 0px; /* Ako želite da uklonite razmake između redova */
+}
+
+.separator {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.card-information {
+  background-color: #fff;  
+  border-radius: 10px;     
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+  padding: 20px;           
+  margin: 20px auto;       
+  width: 500px;   
+  height: 300px;
+  margin-top: 170px;
+  margin-right: 180px;
+}
+
+.card-body-information {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;   
+  padding: 15px;             
+}
+
+.card-information:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  
+}
+
+.icon {
+  margin-right: 4px;
+  color: grey
+}
+
+.fav-review-like-button,
+.fav-review-like-button .FaHeart-icon,
+.fav-review-like-button .FaRegHeart-icon {
+  color: #F15A24;
+  position: absolute;
+  align-self: center;
+  margin-bottom: 13px;
+  margin-left: 200px;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.fav-review-like-button:hover {
+  color: #e64a19;
+}
+
+.numberOfLikes {
+  margin-left: 225px;
+  color: #e64a19;
+}
